@@ -4,16 +4,16 @@ SPDX-FileCopyrightText: 2021 Zextras <https://www.zextras.com>
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
+Text with a tooltip which is visible only when text is ellipsed.
+
 ```jsx
 import { Container } from '@zextras/carbonio-design-system';
-import TextWithTooltip from '../basic/TextWithTooltip.jsx';
 <Container orientation="horizontal" mainAlignment="space-around" height={100}>
 	<TextWithTooltip
 		size="large"
 		color="primary"
 		weight="regular"
 		style={{ maxWidth: '100px' }}
-		overflowTooltip
 	>
 		Hellooooooooooooooooooooooo world!
 	</TextWithTooltip>
@@ -21,8 +21,7 @@ import TextWithTooltip from '../basic/TextWithTooltip.jsx';
 		size="medium"
 		color="primary"
 		weight="regular"
-		style={{ maxWidth: '20%' }}
-		overflowTooltip
+		style={{ maxWidth: '30%' }}
 	>
 		Resize me to activate the tooltip!
 	</TextWithTooltip>
@@ -32,7 +31,6 @@ import TextWithTooltip from '../basic/TextWithTooltip.jsx';
 ### Change TextWithTooltip's trigger delay
 ```jsx
 import { Container } from '@zextras/carbonio-design-system';
-import TextWithTooltip from '../basic/TextWithTooltip.jsx';
 <Container orientation="horizontal" mainAlignment="space-around" height={100}>
 	<TextWithTooltip
         label="3 seconds before tooltip trigger Lorem ipsum dolor sit amet"
